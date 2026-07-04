@@ -1,0 +1,18 @@
+# Rust / Cargo
+target/
+*.wasm
+
+# Node
+frontend/node_modules/
+frontend/dist/
+
+# Env — keep .env.example but not real secrets
+# .env  <-- intentionally tracked (contains only public testnet contract IDs, no private keys)
+
+# Stellar CLI config with private keys
+.stellar/
+
+# OS
+.DS_Store
+Thumbs.db
+.vercel

@@ -1,0 +1,19 @@
+[workspace]
+members = [
+    "contracts/subscription",
+    "contracts/content_gate",
+]
+resolver = "2"
+
+[workspace.dependencies]
+soroban-sdk = { version = "21.7.6", features = ["testutils"] }
+
+[profile.release]
+opt-level = "z"
+overflow-checks = true
+debug = 0
+strip = "symbols"
+debug-assertions = false
+panic = "abort"
+codegen-units = 1
+lto = true
