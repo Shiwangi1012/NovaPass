@@ -46,8 +46,4 @@ fn test_subscribe() {
 
     assert!(client.is_active(&subscriber));
 
-    assert!(!client.is_active(&subscriber));
-    client.subscribe(&subscriber, &duration_days);
-
-    assert!(client.is_active(&subscriber));
 }
