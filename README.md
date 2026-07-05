@@ -13,7 +13,7 @@
 | Demo video | [demo.mp4](./demo.mp4) |
 | Subscription Contract | [CD6SWQZYNCJ2G...](https://stellar.expert/explorer/testnet/contract/CD6SWQZYNCJ2GX7LUGFGXEENO7WCQLNHLFUZNBRNC5GWSUL7FRIBAIWE) |
 | Content Gate Contract | [CDOBDWMD7477B...](https://stellar.expert/explorer/testnet/contract/CDOBDWMD7477BX4JRBA6MKQRAVCPPSTMDW7IBFQW4HHPEWTFDP7HDJYZ) |
-| Contract Deployment tx | [c64e515ef551b7a021eb415e8e7ee5ff2017d6ad8cbfcc03fb54751d3f1dba07] |
+| Contract Deployment tx | [c64e515ef551b7a021eb415e8e7ee5ff2017d6ad8cbfcc03fb54751d3f1dba07] (https://stellar.expert/explorer/testnet/tx/c64e515ef551b7a021eb415e8e7ee5ff2017d6ad8cbfcc03fb54751d3f1dba07) |
 
 ## Submission Checklist
 
