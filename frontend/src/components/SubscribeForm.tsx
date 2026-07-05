@@ -109,10 +109,11 @@ export default function SubscribeForm({ address, onSuccess }: SubscribeFormProps
       {status === 'pending' && <div className="mint-status mint-status--pending">Transaction pending...</div>}
 
       {status === 'success' && txHash && (
-        <div className="mint-status mint-status--success">
-          <div>Transaction Successful: Subscribed!</div>
-          <a href={explorerBase + '/tx/' + txHash} target="_blank" rel="noopener noreferrer">
-            {txHash.slice(0, 8)}...{txHash.slice(-6)}
+        <div className="mint-panel glass-card" style={{ marginTop: '2rem', border: '1px solid #10b981', background: 'rgba(16, 185, 129, 0.05)', padding: '1.5rem', borderRadius: '12px', textAlign: 'center' }}>
+          <div style={{ color: '#10b981', fontSize: '1.25rem', fontWeight: 600, marginBottom: '0.5rem' }}>Transaction Successful: Subscribed!</div>
+          <p style={{ margin: '0 0 1rem 0', color: 'inherit' }}>Your time-locked pass has been minted.</p>
+          <a href={explorerBase + '/tx/' + txHash} target="_blank" rel="noopener noreferrer" className="action-button action-button--ghost" style={{ display: 'inline-flex', textDecoration: 'none' }}>
+            View on Explorer
           </a>
         </div>
       )}

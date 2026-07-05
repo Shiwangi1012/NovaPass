@@ -82,3 +82,6 @@ impl SubscriptionContract {
             .remove(&DataKey::Subscriber(subscriber));
     }
 }
+
+#[cfg(test)]
+mod test;
