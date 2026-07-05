@@ -110,7 +110,7 @@ export default function SubscribeForm({ address, onSuccess }: SubscribeFormProps
 
       {status === 'success' && txHash && (
         <div className="mint-status mint-status--success">
-          <div>Subscribed successfully.</div>
+          <div>Transaction Successful: Subscribed!</div>
           <a href={explorerBase + '/tx/' + txHash} target="_blank" rel="noopener noreferrer">
             {txHash.slice(0, 8)}...{txHash.slice(-6)}
           </a>

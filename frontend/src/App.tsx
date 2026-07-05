@@ -3,6 +3,7 @@ import { ArrowRight } from 'lucide-react'
 import WalletConnect from './components/WalletConnect'
 import SubscribeForm from './components/SubscribeForm'
 import ContentPage from './components/ContentPage'
+import Balance from './components/Balance'
 import { checkAccess, isActive } from './lib/contracts'
 import './App.css'
 
@@ -291,6 +292,7 @@ export default function App() {
                     ? 'The app checks the subscription and content gate in real time.'
                     : 'Connect a wallet to see the access state and mint controls.'}
                 </p>
+                {address && <Balance address={address} refreshTrigger={refreshToken} />}
                 <button type="button" className="action-button action-button--ghost action-button--block" onClick={() => setView('content')}>
                   Open content view
                 </button>
