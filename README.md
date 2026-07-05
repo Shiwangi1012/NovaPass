@@ -6,6 +6,7 @@
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue)](./LICENSE)
 
 | Item | Value |
+|---|---|
 | Live demo (Vercel) | [https://frontend-omega-peach-96.vercel.app/](https://frontend-omega-peach-96.vercel.app/) |
 | Source repo | [https://github.com/Shiwangi1012/NovaPass/](https://github.com/Shiwangi1012/NovaPass/) |
 | Network | Stellar Testnet (Test SDF Network; September 2015) |
