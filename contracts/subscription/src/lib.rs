@@ -1,8 +1,6 @@
 #![no_std]
 
-use soroban_sdk::{
-    contract, contractimpl, contracttype, Address, Env, Symbol,
-};
+use soroban_sdk::{contract, contractimpl, contracttype, Address, Env, Symbol};
 
 // Storage key types
 #[contracttype]
@@ -57,11 +55,7 @@ impl SubscriptionContract {
     /// Returns true if `subscriber` has a currently active (non-expired) pass.
     pub fn is_active(env: Env, subscriber: Address) -> bool {
         let key = DataKey::Subscriber(subscriber);
-        if let Some(expiry_ledger) = env
-            .storage()
-            .persistent()
-            .get::<DataKey, u32>(&key)
-        {
+        if let Some(expiry_ledger) = env.storage().persistent().get::<DataKey, u32>(&key) {
             env.ledger().sequence() < expiry_ledger
         } else {
             false
