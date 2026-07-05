@@ -40,9 +40,10 @@ fn test_subscribe() {
     let subscriber = Address::generate(&env);
     let duration_days = 30;
     
-    assert_eq!(client.is_active(&subscriber), false);
+    assert!(!client.is_active(&subscriber));    
     
     client.subscribe(&subscriber, &duration_days);
+
+    assert!(client.is_active(&subscriber));
     
-    assert_eq!(client.is_active(&subscriber), true);
 }
