@@ -39,11 +39,10 @@ fn test_subscribe() {
 
     let subscriber = Address::generate(&env);
     let duration_days = 30;
-    
-    assert!(!client.is_active(&subscriber));    
-    
+
+    assert!(!client.is_active(&subscriber));
+
     client.subscribe(&subscriber, &duration_days);
 
     assert!(client.is_active(&subscriber));
-
 }
