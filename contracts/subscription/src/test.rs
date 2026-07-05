@@ -39,20 +39,16 @@ fn test_subscribe() {
 
     let subscriber = Address::generate(&env);
     let duration_days = 30;
-<<<<<<< HEAD
     
     assert!(!client.is_active(&subscriber));    
     
     client.subscribe(&subscriber, &duration_days);
 
     assert!(client.is_active(&subscriber));
-    
-=======
 
     assert_eq!(client.is_active(&subscriber), false);
 
     client.subscribe(&subscriber, &duration_days);
 
     assert_eq!(client.is_active(&subscriber), true);
->>>>>>> adcde06 (Format rust code)
 }
