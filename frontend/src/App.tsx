@@ -116,7 +116,6 @@ export default function App() {
 
   const handleMintSuccess = () => {
     setRefreshToken(value => value + 1)
-    setView('content')
   }
 
   const handleUnlockClick = () => {
@@ -275,9 +274,7 @@ export default function App() {
 
             <aside className="mint-aside">
               <div className="side-card glass-card">
-                <span className="eyebrow">Flow summary</span>
-                <h3>What happens next</h3>
-                <ul>
+                <span className="eyebrow">Flow summary</span>                <ul>
                   <li>Connect your Stellar wallet.</li>
                   <li>Pick a pass duration and sign once.</li>
                   <li>The contract updates the access state automatically.</li>
@@ -292,11 +289,17 @@ export default function App() {
                     ? 'The app checks the subscription and content gate in real time.'
                     : 'Connect a wallet to see the access state and mint controls.'}
                 </p>
-                {address && <Balance address={address} refreshTrigger={refreshToken} />}
                 <button type="button" className="action-button action-button--ghost action-button--block" onClick={() => setView('content')}>
                   Open content view
                 </button>
               </div>
+
+              {address && (
+                <div className="side-card glass-card">
+                  <span className="eyebrow">Wallet</span>
+                  <Balance address= {address} refreshTrigger= {refreshToken} />
+                </div>
+              )}
             </aside>
           </section>
         )}

@@ -7,7 +7,11 @@
 
 | Item | Value |
 |---|---|
+<<<<<<< HEAD
 | Live demo (Vercel) | [https://frontend-omega-peach-96.vercel.app/](https://frontend-omega-peach-96.vercel.app/) *(Replace with real URL)* |
+=======
+| Live demo (Vercel) | [https://your-app.vercel.app](https://your-app.vercel.app) *(Replace with real URL)* |
+>>>>>>> temp
 | Source repo | [https://github.com/your-username/stellar-proj1](https://github.com/your-username/stellar-proj1) *(Replace with your GitHub repo)* |
 | Network | Stellar Testnet (Test SDF Network; September 2015) |
 | Demo video | [demo.mp4](./demo.mp4) |
@@ -134,6 +138,41 @@ Expected: Both test suites pass, demonstrating proper state handling and error p
 The CI/CD pipeline is located in `.github/workflows/ci.yml`. On every push or PR to `main`, it runs `cargo test` to ensure smart contracts remain stable.
 
 The frontend is configured for deployment on Vercel (see `frontend/vercel.json`).
+<<<<<<< HEAD
+
+## Tech stack
+
+| Layer | Technology |
+|---|---|
+| Contracts | Rust + Soroban SDK |
+| Blockchain | Stellar Testnet (SDF network) |
+| Frontend | React 19 + TypeScript + Vite |
+| Styling | Custom CSS and glassmorphism |
+| Wallets | StellarWalletsKit |
+| Real-time | Soroban Events (`EventFeed.tsx`) |
+| CI/CD | GitHub Actions |
+
+## Testnet deployment (live)
+
+This project is deployed on the Stellar Testnet.
+
+| Item | Value |
+|---|---|
+| Network | Stellar Testnet |
+| SubscriptionContract | `CD6SWQZYNCJ2GX7LUGFGXEENO7WCQLNHLFUZNBRNC5GWSUL7FRIBAIWE` |
+| ContentGateContract | `CDOBDWMD7477BX4JRBA6MKQRAVCPPSTMDW7IBFQW4HHPEWTFDP7HDJYZ` |
+
+### Verifiable on-chain transaction hashes
+
+All hashes are on Stellar Testnet and resolve on [Stellar Expert](https://stellar.expert/explorer/testnet).
+
+| Step | Tx hash |
+|---|---|
+| Deploy SubscriptionContract | `[Insert your deployment hash here]` |
+| Deploy ContentGateContract | `[Insert your deployment hash here]` |
+| Recent subscribe (live) | `[Insert your contract call tx hash here]` |
+=======
+>>>>>>> temp
 
 ## Tech stack
 
@@ -167,3 +206,17 @@ All hashes are on Stellar Testnet and resolve on [Stellar Expert](https://stella
 | Deploy ContentGateContract | `[Insert your deployment hash here]` |
 | Recent subscribe (live) | `[Insert your contract call tx hash here]` |
 
+## Screenshot index
+
+**Note for submission:** All screenshots should be placed in `docs/screenshots/` as requested by the rubric. You will need to take these screenshots of your running application and update the paths in the Checklist above.
+
+| Screenshot required | Status |
+|---|---|
+| Wallet connected state | ✅ Added `wallet-connected.png` |
+| Balance displayed | ✅ Added `balance-displayed.png` |
+| Successful testnet transaction | ✅ Added `tx-result.png` |
+| Transaction result UI | ✅ Added `tx-result.png` |
+| Wallet options available | ✅ Added `wallet-options.png` |
+| Mobile responsive UI | ✅ Added `mobile-dashboard.png` |
+| CI/CD pipeline running | ❌ **[STILL MISSING]** |
+| Test output (3+ passing tests)| ❌ **[STILL MISSING]** |

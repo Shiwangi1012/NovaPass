@@ -42,3 +42,6 @@ impl ContentGateContract {
         client.is_active(&user)
     }
 }
+
+#[cfg(test)]
+mod test;

@@ -32,6 +32,10 @@ jobs:
       - name: Install Soroban CLI
         run: cargo install --locked soroban-cli --version 21.0.0
 
+      - name: Build WASM (subscription)
+        working-directory: contracts
+        run: cargo build --target wasm32-unknown-unknown --release -p subscription
+
       - name: Lint
         working-directory: contracts
         run: cargo clippy --workspace --all-targets -- -D warnings
@@ -43,11 +47,6 @@ jobs:
       - name: Test
         working-directory: contracts
         run: cargo test --workspace
-
-      - name: Build WASM (subscription)
-        working-directory: contracts
-        run: cargo build --target wasm32-unknown-unknown --release -p subscription
-
       - name: Build WASM (content_gate)
         working-directory: contracts
         run: cargo build --target wasm32-unknown-unknown --release -p content_gate
