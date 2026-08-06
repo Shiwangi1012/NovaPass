@@ -20,7 +20,7 @@
 ### Level 1
 
 - [x] Public GitHub repository - https://github.com/Shiwangi1012/NovaPass/
-- [x] README with complete documentation - this file
+- [x] README with complete documentation - NovaPass/README.md
 - [x] Project description - see [What is this?](#what-is-this)
 - [x] Setup instructions - see [Quick start](#quick-start)
 - [x] Wallet connected state - ![Wallet connected](docs/screenshots/wallet-connected.png)
