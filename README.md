@@ -23,7 +23,7 @@
 - [x] README with complete documentation - NovaPass/README.md
 - [x] Project description - see [What is this?](#what-is-this)
 - [x] Setup instructions - see [Quick start](#quick-start)
-- [x] Wallet connected state - ![Wallet connected](docs/screenshots/wallet-connected.png)
+- [x] Wallet connected state - ![Wallet connected](docs/screenshots/wallet_connected.png)
 - [x] Balance displayed - ![Balance displayed](docs/screenshots/balance-displayed.png)
 - [x] Successful testnet transaction - ![Testnet tx success](docs/screenshots/transaction.png)
 - [x] Transaction result shown to user - ![Transaction result](docs/screenshots/tx-result.png)
